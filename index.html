@@ -13,7 +13,7 @@
             /* Adjust the height of the blank space as needed */
         }
 
-        .jumbotron-overlay {
+        /* .jumbotron-overlay {
             position: absolute;
             top: 0;
             left: 0;
@@ -23,14 +23,27 @@
             /* Adjust the alpha value to make it lighter or darker */
         }
 
-        .jumbotron-content {
+        */ .jumbotron-content {
             position: relative;
             z-index: 1;
         }
 
         .jumbotron-background {
-            background-image: url('https://www.hdwallpapers.in/download/beautiful_purple_sky_and_trees_with_reflection_on_body_of_water_4k_hd_nature-1600x900.jpg');
-            height: 500px;
+            background-image: url('img/jumbotron-background.png');
+            height: auto;
+            min-height: 500px;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .jumbotron>.overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(255, 132, 230, 0.85);
+            z-index: 1;
         }
     </style>
 </head>
@@ -45,26 +58,29 @@
 
 
     <!-- Jumbotron -->
-    <div class="p-5 text-center bg-image position-relative jumbotron-background">
-        <div class="jumbotron-overlay"></div>
-        <div class="d-flex justify-content-center align-items-center h-100 jumbotron-content">
+
+    <div class="jumbotron jumbotron-fluid jumbotron-background">
+        <div class="container d-flex justify-content-center align-items-center text-center" style="min-height: 500px;">
             <div class="text-light">
                 <h1 class="mb-3">Mijn Vijfluik</h1>
                 <h5 class="mb-3">Adrian Kaminski VMT1A</h5>
-                Met deze website wil ik groei laten zien. In deze website heb ik
-                dus vier werken van mezelf er in staan. Het vijfde werk is dus de website. In deze website kan je
-                zien
-                dat ik veel groei heb laten zien voor als je dit website vergelijkt met mijn allereerste website die
-                ik
-                op het SintLucas heb gemaakt.
-
-                <h6><a href="https://akaminski07.github.io/My-First-HTML/index.html" class="link-light"
-                        target="_blank">Mijn eerste
-                        website</a></h6>
+                <p>
+                    Met deze website wil ik groei laten zien. In deze website heb ik
+                    dus vier werken van mezelf er in staan. Het vijfde werk is dus de website. In deze website kan je
+                    zien
+                    dat ik veel groei heb laten zien voor als je dit website vergelijkt met mijn allereerste website die
+                    ik
+                    op het SintLucas heb gemaakt.
+                </p>
+                <h6>
+                    <a href="https://akaminski07.github.io/My-First-HTML/index.html" class="link-light" target="_blank">
+                        Mijn eerste website
+                    </a>
+                </h6>
             </div>
         </div>
     </div>
-    </div>
+
     <!-- Jumbotron -->
 
     <div class="spacer"></div>
